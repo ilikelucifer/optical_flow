@@ -1,0 +1,19 @@
+
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(optical_flow)
+
+find_package(OpenCV 2.4.9 REQUIRED)
+
+set  (PROJECT_SOURCES	
+	main.cpp
+   
+	) 
+
+set  (PROJECT_HEADERS
+	
+	)
+
+
+add_executable(optical_flow ${PROJECT_SOURCES} ${PROJECT_HEADERS})
+
+target_link_libraries(optical_flow ${OpenCV_LIBS})
